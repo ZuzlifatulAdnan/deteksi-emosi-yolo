@@ -47,10 +47,10 @@ Jika menggunakan YOLOv5/YOLOv8, tambahkan dependensi sesuai repo (mis. `git+http
 emosi-wajah/
 ├─ data/
 │  ├─ fer2013.csv
-│  ├─ datasets/            # folder dataset yang sudah dikelompokkan (train/val/test)
+│  ├─ class_map.txt          
 ├─ models/
-│  ├─ detector/            # weights untuk YOLO (detector)
-│  └─ classifier/          # weights untuk CNN (emotion classifier)
+│  ├─ yolov5_face.pt
+   └─ emotion_cnn.pth
 ├─ notebooks/
 ├─ src/
 │  ├─ train_classifier.py
@@ -59,10 +59,8 @@ emosi-wajah/
 │  ├─ dataset_utils.py
 │  └─ utils.py
 ├─ requirements.txt
-├─ README.md
-└─ weights/
-   ├─ yolov5_face.pt
-   └─ emotion_cnn.pth
+└─ README.md
+
 ```
 
 ## Persiapan Dataset
@@ -184,7 +182,7 @@ Lisensi proyek: MIT (atau sesuaikan dengan kebutuhan Anda).
 
 ## Kontributor
 
-* Nama Anda — pengembang utama
+* Zuzlifatul Adnan — pengembang utama
 
 ---
 
